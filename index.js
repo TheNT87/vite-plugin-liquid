@@ -134,6 +134,7 @@ const plugin = (options = {}) => {
             }
         },
         buildStart: async () => {
+            console.log(userEnv)
             if (userEnv.command !== 'build' || !resolvedConfig.build.rollupOptions.input) {
                 return
             }
